@@ -84,7 +84,7 @@ xkb_symbols "cz_programmer" {
     // us layout with czech chars under AltGr
 
     include "us"
-    name[Group1]= "Czech programmer's";
+    name[Group1]= "Czech/Swedish programmer's";
 
     key <TLDE>{[     grave,  asciitilde,     semicolon, dead_abovering ]};
     key <AE02>{[         2,          at,        ecaron,     Ecaron ]};
@@ -99,11 +99,15 @@ xkb_symbols "cz_programmer" {
     key <AE12>{[     equal,        plus,    dead_acute, dead_caron ]};
 
     key <AD03>{[         e,           E,             e,   EuroSign ]};
-    key <AD11>{[ bracketleft, braceleft,        uacute,     Uacute ]};
+    // key <AD11>{[ bracketleft, braceleft,        uacute,     Uacute ]};
 
-    key <AC10>{[ semicolon,      colon,          uring,      Uring ]};
-    key <AC11>{[ apostrophe,  quotedbl,        section,   quotedbl ]};
+    // key <AC10>{[ semicolon,      colon,          uring,      Uring ]};
+    // key <AC11>{[ apostrophe,  quotedbl,        section,   quotedbl ]};
     key <BKSL>{[ backslash,        bar, dead_diaeresis, apostrophe ]};
+    
+    key <AD11> { [ bracketleft,  braceleft,  aring,       Aring      ] };
+    key <AC10> { [ semicolon,    colon,      odiaeresis,  Odiaeresis ] };
+    key <AC11> { [ apostrophe,   quotedbl,   adiaeresis,  Adiaeresis ] };
 
     include "level3(ralt_switch)"
 };
